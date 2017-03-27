@@ -1,0 +1,131 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+body{
+margin:0
+}
+a:active,a:hover,a:focus{
+outline:0
+}
+h1{
+font-size:2em;
+margin:0.67em 0
+}
+img{
+border:0
+}
+body{
+-webkit-font-smoothing:antialiased;
+background:#f2f2f2;
+background-image: url(http://i.imgur.com/HPiJJNj.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center top;
+background-size: cover;
+font-family:"chaparral-pro",Georgia,serif;
+font-size:16px;
+}
+a{
+color:#ea5449;
+text-decoration:none
+}
+h1{
+font-family:"proxima-nova",Helvetica,sans-serif;
+font-size:24px;
+font-weight:bold;
+text-transform:uppercase;
+margin:0
+}
+.site-nav{
+font-weight:300;
+font-size:14px;
+font-family:"proxima-nova",Helvetica,sans-serif;
+text-align:center
+}
+.portfolio-piece-left{
+background:#f2f2f2;
+font-family:"proxima-nova",Helvetica,sans-serif;
+font-size:14px;
+font-weight:300;
+height:33vh;
+width: 50vw;
+float: center;
+position:relative;
+text-align:center;
+margin-left: 25vw;
+}
+.portfolio-piece-left:hover .portfolio-bg{
+opacity:0.45;
+filter: none;
+-webkit-filter: grayscale(0%);
+}
+.portfolio-piece-left:before{
+content:"";
+display:inline-block;
+height:100%;
+vertical-align:middle;
+}
+.portfolio-piece-center{
+font-family:"proxima-nova",Helvetica,sans-serif;
+font-size:14px;
+font-weight:300;
+height:11vw;
+position:relative;
+text-align:center;
+}
+.portfolio-piece-center:before{
+content:"";
+display:inline-block;
+height:100%;
+vertical-align:middle;
+} /* yo this is actually the header hting */
+.portfolio-bg,.item-link{
+transition:opacity 200ms ease;
+background-repeat:no-repeat;
+background-position:center top;
+background-size:cover;
+position:absolute;
+left:0;
+width:100%;
+top:0;
+height:100%;
+display:block;
+opacity:0.18;
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+.portfolio-info{
+position:relative;
+line-height:0;
+display:inline-block;
+vertical-align:middle
+}
+.item-title{
+line-height:0.7;
+font-size:35px;
+font-family: 'Carrois Gothic', sans-serif;
+color:#1e4a66;
+text-transform:none;
+}
+.item-1 .item-title{
+font-size:48px;
+color:#222222;
+text-transform:none
+}
+.item-link{
+z-index:3;
+}
+.item-desc{
+-webkit-font-smoothing:antialiased;
+font-weight:bold;
+color:#808080;
+font-family: 'Carrois Gothic', sans-serif;
+font-size:24px;
+font-weight:300;
+line-height:0.2;
+}
+.item-subtext{
+-webkit-font-smoothing:antialiased;
+color:#060D1C;
+font-family: 'Carrois Gothic', sans-serif;
+font-size:14px;
+}
